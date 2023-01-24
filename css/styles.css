@@ -84,8 +84,6 @@ ul {
 /* Header section */
 /* Styles logo */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -164,7 +162,7 @@ ul {
 }
 
 /* Hero section */
-.hero {
+.hero-section {
   text-align: center;
   background-color: var(--backgroind-color);
   padding-top: 188px;
@@ -211,8 +209,10 @@ ul {
   gap: var(--indent);
 }
 .feature-list-item {
-  flex-basis: calc((100% - (var(--indent) * var(--items)-1))) / var(--items));
+  flex-basis: calc((100%-72px) / 4;
 }
+  /* flex-basis: calc((100% - (var(--indent) * var(--items)-1))) / var(--items)); */
+
 /* .feature-list-item:not(:last-child) {
   margin-right: 24px;
 } */
@@ -353,17 +353,21 @@ ul {
 
 }
 /* Portfolio */
-
+.portfolio-section{
+  padding-top: 96px;
+}
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+  gap: 48px var(--indent);
 }
 .portfolio-wrapper{
+  padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
   border: 1px solid var(--footer-color);
   border-top: none;
+  
 }
 
 .portfolio-list-item{
