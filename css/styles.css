@@ -376,10 +376,6 @@ ul {
   border-top: none;
 }
 
-/* --indent: 24px;
-  --items1: 3;
-  --items2: 4;
-  --items3: 2; */
 .portfolio-list-item {
   flex-basis: calc((100% - (var(--indent) * var(--items3))) / var(--items1));
 }
