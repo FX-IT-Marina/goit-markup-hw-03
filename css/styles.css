@@ -37,8 +37,6 @@ html {
   --items1: 3;
   --items2: 4;
   --items3: 2;
-  --items4: 6;
-  --items5: 9;
 }
 
 body {
@@ -215,7 +213,7 @@ ul {
   --items2: 4; */
 
 .feature-list-item {
-  flex-basis: calc((100% - (var(--indent) * var(--items1)) / var(--items2)));
+  flex-basis: calc((100% - (var(--indent) * var(--items1))) / var(--items2));
 }
 /* .feature-list-item:not(:last-child) {
   margin-right: 24px;
@@ -245,7 +243,7 @@ ul {
   --items1: 3;
   --items2: 4; */
 .gallery-list-item {
-  flex-basis: calc((100% - (var(--indent) * var(--items3)) / var(--items1)));
+  flex-basis: calc((100% - (var(--indent) * var(--items3))) / var(--items1));
 }
 /* .gallery-list-item:not(:last-child) {
   margin-right: 24px;
@@ -274,7 +272,7 @@ ul {
   border: 0, 5px solid var(--color-light);
   background: var(--white-color);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - (var(--indent) * var(--items1)) / var(--items2)));
+  flex-basis: calc((100% - (var(--indent) * var(--items1))) / var(--items2));
 }
 /* .team-card-item:not(:last-child) {
   margin-right: 24px;
@@ -381,14 +379,9 @@ ul {
 /* --indent: 24px;
   --items1: 3;
   --items2: 4;
-  --items3: 2;
-  --items4:6;
-  --items5:9; */
-
+  --items3: 2; */
 .portfolio-list-item {
-  flex-basis: calc(
-    (100% - (var(--indent) * var(var(--items4))) / var(--items5))
-  );
+  flex-basis: calc((100% - (var(--indent) * var(--items3))) / var(--items1));
 }
 /* Footer */
 .footer-section {
